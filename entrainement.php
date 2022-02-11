@@ -690,3 +690,6 @@ $object = new Etudiant(); //new est un mot cle permettant d'instancier la class 
 print '<pre>'; var_dump($object); print "</pre>"; // nous pouvons observer le type, la reference et l'objet1 et le nom de la class dont il est issu. 
 echo $object->prenom . "<br>"; //nous pouvons piocher dans un ARRAY avec les crochets, nous devons piocher dans un objet avec les fleches. 
 echo $object->pays() . "<br>"; //Appel d'une methode toujours avc des parenthèse
+/* Contexte: Sur un site, une classe panier contiendra tte les methode utilisee: "ajout_article(), retire_article(), valider_paiement", etc 
+des attributs ou proprietes "$nombre_article", "$prix_article", "$quantite". 
+L'objet sera le panier lui meme (déployé), avec ses fonctionalités: $panier->ajout_article() */
